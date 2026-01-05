@@ -16,9 +16,10 @@ EXPOSE 8080
 # Copy startup script
 COPY start.sh /usr/local/bin/start.sh
 
-# Fix permissions (switch to root to chmod, then back to coder)
+# Fix permissions and Windows line endings
 USER root
-RUN chmod +x /usr/local/bin/start.sh
+RUN sed -i 's/\r$//' /usr/local/bin/start.sh && \
+    chmod +x /usr/local/bin/start.sh
 USER coder
 
 # Start code-server using our script
