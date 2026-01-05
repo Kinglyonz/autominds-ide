@@ -1,0 +1,18 @@
+services:
+  code-server:
+    image: codercom/code-server:latest
+    container_name: autominds-ide
+    environment:
+      - GITHUB_CLIENT_ID=Ov23liYxWV9l3BmtQcMx
+      - GITHUB_CLIENT_SECRET=90c379f63e8c1d1c409bc0ea58adfdafcb61d32b
+    volumes:
+      - ./config:/home/coder/.config/code-server
+      - ./workspace:/home/coder/project
+      - ide-data:/home/coder/.local
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    command: --bind-addr 0.0.0.0:8080 /home/coder/project
+
+volumes:
+  ide-data:
