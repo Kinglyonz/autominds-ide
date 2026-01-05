@@ -3,7 +3,7 @@ builder = "DOCKERFILE"
 
 [deploy]
 startCommand = "code-server --bind-addr 0.0.0.0:$PORT /home/coder/project"
-healthcheckPath = "/"
+healthcheckPath = "/login"
 healthcheckTimeout = 100
 restartPolicyType = "ON_FAILURE"
 restartPolicyMaxRetries = 10

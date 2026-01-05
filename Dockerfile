@@ -13,5 +13,5 @@ COPY --chown=coder:coder workspace/ /home/coder/project/
 # Expose port (Railway will use $PORT)
 EXPOSE 8080
 
-# Start code-server - use shell form for variable expansion
-CMD code-server --bind-addr 0.0.0.0:${PORT:-8080} /home/coder/project
+# Start code-server using sh -c to ensure environment variables like $PORT are expanded correctly
+CMD ["/bin/sh", "-c", "code-server --bind-addr 0.0.0.0:${PORT:-8080} --auth password /home/coder/project"]
