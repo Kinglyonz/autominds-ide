@@ -1,40 +1,43 @@
-# Autominds Cloud IDE
+# Welcome to AutoMinds Sovereign IDE
 
-Production-ready browser-based development environment.
+> **Secure Development Environment**  
+> This is a sovereign code-server instance. Your code never touches the public cloud.
 
-## Quick Start (Local)
+---
 
-```bash
-docker-compose up -d
-# Access at http://localhost:8080
-# Password: demo
-```
+## Quick Links
 
-## Deploy to Railway (Recommended)
+- 🌐 **[Back to AutoMinds Site](https://autominds.org)**
+- 📄 **[View Demo](https://autominds.org/demo.html)**
+- ✉️ **[Contact Us](mailto:admin@autominds.org)**
 
-1. Install Railway CLI: `npm install -g @railway/cli`
-2. Login: `railway login`
-3. Initialize: `railway init`
-4. Deploy: `railway up`
-5. Add custom domain: `try.autominds.org`
+---
 
-## Environment Variables
+## What is This?
 
-| Variable | Description |
-|----------|-------------|
-| `PASSWORD` | Login password (default: demo) |
-| `GITHUB_CLIENT_ID` | GitHub OAuth Client ID |
-| `GITHUB_CLIENT_SECRET` | GitHub OAuth Client Secret |
+This is a fully-featured VS Code environment running in your browser. It's powered by [code-server](https://github.com/coder/code-server) and hosted on Railway.
 
-## Files
+**Key Features:**
+- Full VS Code experience
+- Terminal access
+- Extension support
+- File uploads/downloads
 
-- `docker-compose.yml` - Local development
-- `Dockerfile` - Cloud deployment
-- `railway.toml` - Railway configuration
-- `workspace/` - Default user workspace
+---
 
-## GitHub OAuth
+## Getting Started
 
-Configured with:
-- Client ID: `Ov23liYxWV9l3BmtQcMx`
-- Callback: `https://try.autominds.org/login/oauth2/callback`
+1. **Create a new file**: Click `File` → `New File`
+2. **Open Terminal**: Press `` Ctrl+` `` or `Terminal` → `New Terminal`
+3. **Install Extensions**: Click the Extensions icon in the sidebar
+
+---
+
+## Need Help?
+
+Contact the AutoMinds team at [admin@autominds.org](mailto:admin@autominds.org)
+
+---
+
+**AutoMinds** | Intelligence. Operated.  
+[https://autominds.org](https://autominds.org)
