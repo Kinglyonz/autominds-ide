@@ -7,10 +7,21 @@ ENV PASSWORD=${PASSWORD:-demo}
 ENV EXTENSIONS_GALLERY='{"serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery", "cacheUrl": "https://vscode.blob.core.windows.net/gallery/index", "itemUrl": "https://marketplace.visualstudio.com/items"}'
 
 # Create workspace directory
-USER coder
-WORKDIR /home/coder/project
+# Install "Sovereign Dev Pack" Extensions
+# 1. Continue (Local AI) - "Continue.continue"
+# 2. Thunder Client (API Testing) - "rangav.vscode-thunder-client"
+# 3. Material Icons (Visuals) - "PKief.material-icon-theme"
+# 4. Git Graph (History) - "mhutchie.git-graph"
+# 5. Prettier (Formatting) - "esbenp.prettier-vscode"
+# 6. ESLint (Linting) - "dbaeumer.vscode-eslint"
 
-# Copy welcome files
+RUN code-server --install-extension Continue.continue && \
+    code-server --install-extension rangav.vscode-thunder-client && \
+    code-server --install-extension PKief.material-icon-theme && \
+    code-server --install-extension mhutchie.git-graph && \
+    code-server --install-extension esbenp.prettier-vscode && \
+    code-server --install-extension dbaeumer.vscode-eslint
+
 # Copy welcome files to a template directory
 COPY workspace/ /usr/local/share/workspace/
 
