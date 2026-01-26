@@ -1,0 +1,31 @@
+{
+    "models": [
+        {
+            "title": "Sovereign AI (Ollama)",
+            "provider": "ollama",
+            "model": "llama3",
+            "apiBase": "http://localhost:11434"
+        },
+        {
+            "title": "AutoMinds Cloud (Beta)",
+            "provider": "free-trial",
+            "model": "gpt-4"
+        }
+    ],
+    "customCommands": [
+        {
+            "name": "check-security",
+            "prompt": "Review this code for PII leaks or security vulnerabilities. Be extremely strict."
+        },
+        {
+            "name": "explain-sovereign",
+            "prompt": "Explain how this code can be run in an air-gapped environment."
+        }
+    ],
+    "tabAutocompleteModel": {
+        "title": "TabAutocomplete",
+        "provider": "ollama",
+        "model": "starcoder2:3b",
+        "apiBase": "http://localhost:11434"
+    }
+}

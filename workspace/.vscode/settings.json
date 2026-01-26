@@ -1,9 +1,16 @@
 {
     "workbench.colorTheme": "Default Dark Modern",
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#000000",
+        "titleBar.activeForeground": "#ffffff",
+        "titleBar.border": "#333333",
+        "activityBar.background": "#111111",
+        "activityBar.foreground": "#22c55e",
+        "sideBar.background": "#0a0a0a",
+        "statusBar.background": "#22c55e",
+        "statusBar.foreground": "#000000"
+    },
+    "window.title": "AutoMinds Sovereign IDE",
     "workbench.startupEditor": "readme",
-    "workbench.welcomePage.walkthroughs.openOnInstall": false,
-    "workbench.tips.enabled": false,
-    "editor.fontSize": 14,
-    "security.workspace.trust.enabled": false,
-    "files.autoSave": "afterDelay"
+    "security.workspace.trust.enabled": false
 }
