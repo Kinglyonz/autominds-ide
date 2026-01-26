@@ -1,4 +1,12 @@
-# Welcome to AutoMinds Sovereign IDE
+<div align="center">
+  <a href="https://autominds.org">
+    <img src="https://raw.githubusercontent.com/Kinglyonz/autominds-site/master/logo_white.svg" width="60" alt="AutoMinds Logo"/>
+  </a>
+  
+  # AutoMinds Sovereign IDE
+
+  [**← Back to Home**](https://autominds.org)
+</div>
 
 > **Secure Development Environment**  
 > This is a sovereign code-server instance. Your code never touches the public cloud.
