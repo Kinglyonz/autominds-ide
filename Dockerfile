@@ -11,7 +11,8 @@ USER coder
 WORKDIR /home/coder/project
 
 # Copy welcome files
-COPY --chown=coder:coder workspace/ /home/coder/project/
+# Copy welcome files to a template directory
+COPY workspace/ /usr/local/share/workspace/
 
 # Expose port (Railway will use $PORT)
 EXPOSE 8080
