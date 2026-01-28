@@ -1,25 +1,32 @@
-<div align="center">
-  <a href="https://autominds.org">
-    <img src="https://raw.githubusercontent.com/Kinglyonz/autominds-site/master/logo_white.svg" width="60" alt="AutoMinds Logo"/>
-  </a>
-  
-  # AutoMinds Sovereign IDE
+# Welcome to AutoMinds Studios
+"*The Factory for Sovereign Intelligence*"
 
-  [**← Back to Home**](https://autominds.org)
-</div>
+You are now inside a secure, sovereign development environment.
+This Studio is designed to help you **Build, Wrap, and Sell** AI agents.
+
+## Getting Started
+
+### 1. Build Your Agent
+Use the pre-installed VS Code extensions (Python, Node, AI Companion) to write your agent's code.
+Recommended File Structure:
+- `agent.py` (Main logic)
+- `requirements.txt` (Dependencies)
+
+### 2. The Analyst Companion
+Open the "Continue" extension in the sidebar (or press `Cmd+L`) to chat with **The Analyst**. 
+It is connected to your codebase and can help generate code safely.
+
+### 3. Wrap & Ship
+When your agent is ready, open the terminal and run:
+
+    am-deploy
+
+This will:
+- [x] Scan for dependencies
+- [x] Run a security audit (Sentry)
+- [x] Package your code into a Docker container
+- [x] Generate a Commercial License Key
 
 ---
-
-> **Secure Development Environment**  
-> This is your sovereign workspace. Your code never touches the public cloud.
-
-## Quick Start
-
-1. **Create a new file**: Click `File` → `New File`
-2. **Open Terminal**: Press `` Ctrl+` ``
-3. **Install Extensions**: Click the Extensions icon in the sidebar
-
----
-
-**Need Help?**  
-Contact the AutoMinds team at [admin@autominds.org](mailto:admin@autominds.org)
+**Status**: SOVEREIGN // ONLINE
+**Support**: help@autominds.io
